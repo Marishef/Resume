@@ -6,24 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="резюме верстальщика">
     <meta name="description" content="резюме">
+    <link rel="stylesheet" href="style.css">
     <title>Резюме</title>
 </head>
 <body>
+    <article>
     
     <h1>Шевченко Марина Алексеевна</h1>
-    <img src="foto.jpg" width="100px">
+
+    <div class="foto">
+        <img src="foto.jpg" width="100px">
+    </div>
 
     <p><em>Цель: </em> получение должности Frontend-разработчика</p>
     <p><em>Дата рождения: </em> 04.04.1975г</p>
     <p><em>Город проживания: </em> Ростов-на-Дону</p>
-    <p><em>Телефон: </em>8-928-960-68-26</p>
-    <p><em>Электронная почта: </em> marishef@bk.ru</p>
     <p><em>Образование:</em> Высшее: СКАГС, факультет Мировая экономка,  
         окончание в 2005году</p>
     
-
-    <table>
-        <caption>Стаж:  </caption>
+    
+     <table>
+        <caption><em>Стаж: </em> </caption>
         <thead>
             <tr>
                 <td>
@@ -36,10 +39,10 @@
         </thead>
         <tbody>
             <tr>
-                <td>
+                <td class="podzag">
                     С 1993 года по 2007 год 
                 </td>
-                <td>
+                <td class="podzag" >
                     Сбербанк
                 </td>
             </tr>
@@ -72,14 +75,12 @@
 
                 </td>
             </tr>
+           
             <tr>
-                <td></td>
-            </tr>
-            <tr>
-                <td>
+                <td class="podzag">
                     С 2008 года по 2022 год
                 </td>
-                <td>
+                <td class="podzag">
                     Индивидуальный педприниматель
                 </td>
             </tr>
@@ -96,13 +97,19 @@
             </tr>
         </tbody>
     </table>
-    <p>Дополнительное образование</p>
+    <p> <em>Дополнительное образование</em></p>
     <ul>
-        <li>Веб-разработка для начинающих: HTML и CSS <a href="veb_razr.pdf">Сертификат</a></li>
-        <li>Интерактивный тренажер по SQL<a href="sql.pdf">Сертификат</a></li>
-        <li>Поколение Python: курс для начинающих <a href="python.pdf">Сертификат</a></li>
-        <li>Постановка задачи на разработку ПО <a href="postan_zadachi">Сертификат</a></li>
-        <li>Основы HTML/CSS - верстка сайтов с нуля <a href="osnov_html.pdf">Сертификат</a></li>
+        <li>Веб-разработка для начинающих: HTML и CSS <a href="veb_razr.pdf" 
+            target="_blank">
+            Сертификат</a></li>
+        <li>Интерактивный тренажер по SQL <a href="sql.pdf" target="_blank">
+            Сертификат</a></li>
+        <li>Поколение Python: курс для начинающих <a href="python.pdf" target="_blank">
+            Сертификат</a></li>
+        <li>Постановка задачи на разработку ПО <a href="postan_zadachi" target="_blank" >
+            Сертификат</a></li>
+        <li>Основы HTML/CSS - верстка сайтов с нуля <a href="osnov_html.pdf" target="_blank">
+            Сертификат</a></li>
     </ul>
     
     <p><em>Профессиональные навыки</em></p>
@@ -146,6 +153,21 @@
     
 </body>
 <footer>
-    <a href="https://t.me/marishef4">Телеграмм</a>
+    <div class="kont">
+        <p>
+            <em>Телефон: </em>
+            <span class="tel"> <a href="tel:+79289606826">
+                +7(928)-960-68-26</a></span>
+        </p>
+        <p>
+            <em>Электронная почта: </em> 
+            <a href=”mailto:marishef@bk.ru” >marishef@bk.ru</a>
+        </p>
+    
+    <a href="https://t.me/marishef4">
+        <img src="icons8-телеграмма-app-48.png" alt="Телеграм">
+    </a>
+</div>
 </footer>
+</article>
 </html>
